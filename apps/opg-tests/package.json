@@ -1,0 +1,27 @@
+{
+  "name": "@opg/opg-tests",
+  "version": "1.0.0",
+  "private": true,
+  "description": "OPG website test automation consuming the enterprise Playwright framework.",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:a11y": "playwright test --grep @accessibility",
+    "test:report": "playwright show-report",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "dependencies": {
+    "@opg/pw-core": "workspace:*",
+    "@opg/pw-ui": "workspace:*",
+    "@opg/pw-api": "workspace:*"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.11.3",
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^24.3.3",
+    "typescript": "^5.5.0"
+  }
+}

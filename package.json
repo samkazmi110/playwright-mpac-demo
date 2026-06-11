@@ -1,14 +1,30 @@
 {
-  "name": "playwright-mpac-demo",
+  "name": "@opg/playwright-enterprise-framework",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {},
-  "keywords": [],
+  "private": true,
+  "description": "Enterprise Playwright TypeScript automation framework monorepo.",
+  "scripts": {
+    "build": "pnpm -r run build",
+    "lint": "eslint . --ext .ts",
+    "typecheck": "pnpm -r run typecheck",
+    "test": "pnpm --filter @opg/opg-tests test",
+    "test:headed": "pnpm --filter @opg/opg-tests test:headed",
+    "test:smoke": "pnpm --filter @opg/opg-tests test:smoke"
+  },
+  "keywords": [
+    "playwright",
+    "automation",
+    "framework",
+    "enterprise"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.55.0",
-    "@types/node": "^24.3.3"
+    "@types/node": "^24.13.1",
+    "typescript": "^5.5.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
   }
 }

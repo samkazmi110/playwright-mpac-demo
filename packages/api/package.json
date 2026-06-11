@@ -1,0 +1,29 @@
+{
+  "name": "@opg/pw-api",
+  "version": "1.0.0",
+  "description": "Reusable Playwright API automation infrastructure: BaseApiClient, auth, validators.",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": ["playwright", "api", "client", "framework"],
+  "license": "ISC",
+  "dependencies": {
+    "@opg/pw-core": "workspace:*"
+  },
+  "peerDependencies": {
+    "@playwright/test": ">=1.40.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "typescript": "^5.5.0"
+  }
+}

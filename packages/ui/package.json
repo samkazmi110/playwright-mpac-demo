@@ -1,0 +1,31 @@
+{
+  "name": "@opg/pw-ui",
+  "version": "1.0.0",
+  "description": "Reusable Playwright UI automation infrastructure: BasePage, BaseComponent, accessibility helpers.",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": ["playwright", "ui", "page-object", "framework"],
+  "license": "ISC",
+  "dependencies": {
+    "@opg/pw-core": "workspace:*"
+  },
+  "peerDependencies": {
+    "@playwright/test": ">=1.40.0",
+    "@axe-core/playwright": ">=4.0.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "@axe-core/playwright": "^4.11.3",
+    "typescript": "^5.5.0"
+  }
+}

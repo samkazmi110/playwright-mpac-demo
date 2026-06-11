@@ -1,0 +1,22 @@
+{
+  "name": "@opg/pw-core",
+  "version": "1.0.0",
+  "description": "Core utilities for the enterprise Playwright framework: config, logger, env, types.",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": ["playwright", "core", "framework"],
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.5.0"
+  }
+}
